@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css" type="text/css" />
+    <script src="assets/main.js"></script>
+
+</head>
+<body>
+    <div id="baslik"><h1>At Yarışı</h1></div>
+    <div id="disarisi">
+        <div id="ekran">
+            <div id="at1" class="at"></div>
+            <div id="at2" class="at"></div>
+            <div id="at3" class="at"></div>
+            
+        </div>
+    </div>
+        <div id="panel">
+            <div id="metin">Hangi oyuncuya para basıyorsunuz?</div>
+            <div id="bakiye">Bakiye: <span id="para">100</span> TL</div><div class="clear"></div>
+            Bahis Tutarınız:<input type="text" id="tutar" onkeypress="return isNumberKey(event)"><span id="bahisbilgi"></span><br><br>
+            <button id="sifirla" onclick="sifirla()">Yeniden Oyna</button>
+            <div class="ortala">
+            <button class="button" id="oyna1" onclick="oyna(1)">Mavi</button>
+            <button class="button" id="oyna2" onclick="oyna(2)">Kırmızı</button>
+            <button class="button" id="oyna3" onclick="oyna(3)">Beyaz</button>
+            </div>
+        </div>
+        <div id="credit"><h4>Tuncay Kaptan</h4></div> 
+    
+    
+</body>
+</html>
