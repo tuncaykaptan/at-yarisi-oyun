@@ -1,15 +1,15 @@
-        function isNumberKey(evt) {
-        var charCode = (evt.which) ? evt.which : event.keyCode;
-        if (charCode > 31 && (charCode < 48 || charCode > 57))
-            return false;
-        return true;
+    function load(){
+        if (screen.width <= 700){
+            window.open("./mobile/index.html","_self");
+             }else{
+                 console.log(screen.width)
+             }
     }
-
 
     function oyna(oynanan_at){
         var toplampara=document.getElementById("para").innerHTML;
         var bahistutari=document.getElementById("tutar").value;
-        if(bahistutari=="" || bahistutari=="0"){
+        if(bahistutari=="" || bahistutari=="0" || bahistutari==NaN){
             document.getElementById("tutar").value="";
             window.alert("Lütfen bahis tutarı giriniz.")
             stop;
